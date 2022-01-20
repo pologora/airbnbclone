@@ -1,5 +1,10 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,88 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+.logo-container {
+  width: 40%;
+  margin: 10px;
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 100%;
+}
+
+.hero-container {
+  max-width: 100vw;
+  margin: 10px;
+  text-align: left;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.fa-star {
+  color: rgb(255, 179, 16);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  align-items: flex-start;
+  padding: 5px;
+  margin: 10px;
+  text-align: left;
+  
+}
+
+.card--image {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.card p {
+  margin: 5px;
+}
+
+.card--badge {
+  position: absolute;
+  top: 0;
+  left:0;
+  background-color: white;
+  margin: 10px;
+  padding: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-size: smaller;
+}
+
+.card--image-container {
+  position: relative;
 }
